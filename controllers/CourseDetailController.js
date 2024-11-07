@@ -21,7 +21,7 @@ const CourseDetailController = {
                 await Module.FetchAllLessons();
             }
 
-            return res.status(StatusCodes.OK).render("CourseDetail", {
+            return res.status(StatusCodes.OK).render("/pages/CourseDetail", {
                 title: Course.Title,
                 Course: Course,
             });
